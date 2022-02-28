@@ -21,4 +21,4 @@ jobs:
     - uses: chainguard-dev/actions/apko-build@feature/apko-build
       with:
         config: .apko.yaml
-        tag: ${{ github.repository }}:${{ github.ref_name }}
+        tag: ghcr.io/${{ github.repository }}:${{ github.ref_name }}
