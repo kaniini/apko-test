@@ -18,7 +18,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - uses: chainguard-dev/actions/apko-build@feature/apko-build
+    - uses: distroless/actions/apko-snapshot@main
       with:
         config: .apko.yaml
-        tag: ghcr.io/${{ github.repository }}:${{ github.ref_name }}
+        base-tag: ghcr.io/${{ github.repository }}
